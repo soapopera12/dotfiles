@@ -1,0 +1,31 @@
+# compatibility with VI
+set nocompatible
+
+" Enable mouse support
+set mouse=a
+
+" Enable line numbers
+set number
+
+" Highlight the current line
+set cursorline
+
+" Use relative line numbers (optional, for easier movement)
+set relativenumber
+
+" Syntax highlighting
+syntax on
+
+" Do not save backup files.
+set nobackup
+
+" Do not wrap lines. Allow long lines to extend as far as the line goes.
+" set nowrap
+
+" Enable 24-bit (true color) support (useful in modern terminals)
+set termguicolors
+
+" Basic indent settings for better readability
+set tabstop=4
+set shiftwidth=4
+set expandtab
