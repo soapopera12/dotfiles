@@ -114,4 +114,18 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
+# Override ranger to auto-cd into last visited directory
+ranger() {
+    command ranger
+    if [ -f ~/.rangerdir ]; then
+        cd "$(cat ~/.rangerdir)"
+        rm -f ~/.rangerdir
+    fi
+}
 
+
+export PATH=$PATH:~/.local/bin
+
+
+export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
+export PATH="$JAVA_HOME/bin:$PATH"
