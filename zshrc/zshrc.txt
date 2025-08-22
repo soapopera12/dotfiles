@@ -77,7 +77,10 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions)
+plugins=(git web-search zsh-autosuggestions zbell)
+
+ZBELL_DURATION=5 # Minimum time in seconds before notification 
+ZBELL_NOTIFICATION=true # Enable desktop notifications if available
 
 source $ZSH/oh-my-zsh.sh
 
@@ -123,8 +126,11 @@ ranger() {
     fi
 }
 
+alias g='web-search google'
+
 
 export PATH=$PATH:~/.local/bin
+export PATH="$HOME/.local/share/nvim/mason/bin:$PATH"
 
 
 export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
