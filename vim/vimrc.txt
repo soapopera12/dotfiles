@@ -20,7 +20,7 @@ syntax on
 set nobackup
 
 " Do not wrap lines. Allow long lines to extend as far as the line goes.
-" set nowrap
+set nowrap
 
 " Enable 24-bit (true color) support (useful in modern terminals)
 set termguicolors

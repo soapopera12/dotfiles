@@ -113,6 +113,7 @@ vim.opt.number = true          -- Show line numbers
 vim.opt.relativenumber = true  -- Relative line numbers
 vim.opt.signcolumn = "no"      -- Hide sign column
 vim.opt.clipboard:append("unnamedplus")
+vim.opt.wrap = false
 
 -- Ensure full transparency for all UI elements
 vim.cmd([[
